@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Chrometest {
 
+	//This is Main method
 	public static void main(String[] args) throws InterruptedException {
 
 		String baseURL = "http://www.calculator.net/mortgage-payoff-calculator.html";
