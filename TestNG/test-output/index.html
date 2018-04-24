@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Regression_TestSuite">
-                    <span>C:\supriya\Selenium workspace\TestNG\testng.xml</span>
+                    <span>C:\supriya\Repo\Selenium-project\TestNG\regression-suite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -135,7 +135,7 @@
           <div class="suite-Regression_TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testclasses.TestNG_TestClass2</span>
+              <span class="class-name">testclasses.TestNG_TestClass1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -157,7 +157,7 @@
           <div class="suite-Regression_TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testclasses.TestNG_TestClass1</span>
+              <span class="class-name">testclasses.TestNG_TestClass2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -179,13 +179,13 @@
         </div> <!-- panel Regression_TestSuite -->
         <div panel-name="test-xml-Regression_TestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\supriya\Selenium workspace\TestNG\testng.xml</span>
+            <span class="header-content">C:\supriya\Repo\Selenium-project\TestNG\regression-suite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Regression TestSuite&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Regression TestSuite&quot;&gt;
   &lt;test name=&quot;Application Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testclasses.TestNG_TestClass1&quot;/&gt;
@@ -232,25 +232,25 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testMethod1')
-data.setCell(0, 2, 'testclasses.TestNG_TestClass2')
-data.setCell(0, 3, 10);
+data.setCell(0, 2, 'testclasses.TestNG_TestClass1')
+data.setCell(0, 3, 8);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testMethod1')
+data.setCell(1, 1, 'testMethod2')
 data.setCell(1, 2, 'testclasses.TestNG_TestClass1')
-data.setCell(1, 3, 9);
+data.setCell(1, 3, 5);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testMethod2')
-data.setCell(2, 2, 'testclasses.TestNG_TestClass1')
-data.setCell(2, 3, 7);
+data.setCell(2, 1, 'testMethod1')
+data.setCell(2, 2, 'testclasses.TestNG_TestClass2')
+data.setCell(2, 3, 4);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testMethod2')
 data.setCell(3, 2, 'testclasses.TestNG_TestClass2')
-data.setCell(3, 3, 1);
+data.setCell(3, 3, 4);
 window.suiteTableData['Regression_TestSuite']= { tableData: data, tableDiv: 'times-div-Regression_TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 ms</span>
+              <span class="suite-total-time">Total running time: 21 ms</span>
               <div id="times-div-Regression_TestSuite">
               </div> <!-- times-div-Regression_TestSuite -->
             </div> <!-- times-div -->
@@ -265,9 +265,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Regression_TestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testclasses.TestNG_TestClass2</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Regression_TestSuite" class="panel">
@@ -277,73 +286,100 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">testclasses.TestNG_TestClass1</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">33 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">39 ms</span>
+                <span class="method-start">47 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testMethod1</span>
-                <span class="method-start">40 ms</span>
+                <span class="method-start">47 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">51 ms</span>
+                <span class="method-start">57 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">52 ms</span>
+                <span class="method-start">60 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testMethod2</span>
-                <span class="method-start">52 ms</span>
+                <span class="method-start">61 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">63 ms</span>
+                <span class="method-start">72 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">64 ms</span>
+                <span class="method-start">72 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">73 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testclasses.TestNG_TestClass2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">76 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">66 ms</span>
+                <span class="method-start">77 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">67 ms</span>
+                <span class="method-start">78 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testMethod1</span>
-                <span class="method-start">67 ms</span>
+                <span class="method-start">80 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">80 ms</span>
+                <span class="method-start">86 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">82 ms</span>
+                <span class="method-start">89 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testMethod2</span>
-                <span class="method-start">83 ms</span>
+                <span class="method-start">90 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">92 ms</span>
+                <span class="method-start">97 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
-                <span class="method-name">cleanUp</span>
-                <span class="method-start">93 ms</span>
+                <span class="method-name">afterClass</span>
+                <span class="method-start">101 ms</span>
               </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">101 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testclasses.TestNG_TestClass1</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">208 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

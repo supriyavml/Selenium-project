@@ -1,12 +1,15 @@
 package testclasses;
 
 import org.testng.annotations.Test;
+
+import base.BaseTestSuite;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 
-public class TestNG_TestClass1 {
+public class TestNG_TestClass1 extends BaseTestSuite {
 	
 	@BeforeClass
 	public void setUp() {
