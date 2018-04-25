@@ -2,8 +2,10 @@ package base;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 public class BaseTestSuite {
 
@@ -15,6 +17,16 @@ public class BaseTestSuite {
 	@AfterClass
 	public void afterClass() {
 		System.out.println("\nBaseTestSuite -> after class");
+	}
+	
+	@BeforeTest
+	public void beforeTest() {
+		System.out.println("\nBaseTestSuite -> before test");
+	}
+
+	@AfterTest
+	public void afterTest() {
+		System.out.println("\nBaseTestSuite -> after test");
 	}
 
 	@BeforeSuite
