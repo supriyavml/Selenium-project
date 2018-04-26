@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import appcode.SomeClassToTest;
 
 public class TestNG_Asserts {
+
 	
 	@Test
 	public void testSum() {
