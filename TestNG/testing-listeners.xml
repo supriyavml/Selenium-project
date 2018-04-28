@@ -1,0 +1,45 @@
+
+<!-- <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Listeners TestSuite">
+<test name="Application Test">
+<classes>
+<class name="testclasses.TestNG_ListenersTest1"/>
+</classes>
+</test>
+</suite> 
+--> 
+
+<!--  <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Listeners TestSuite">
+<test name="Application Test 1">
+<classes>
+<class name="testclasses.TestNG_ListenersTest2"/>
+</classes>
+</test>
+<test name="Application Test 2">
+<classes>
+<class name="testclasses.TestNG_ListenersTest2"/>
+</classes>
+</test>
+</suite>
+-->
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Listeners TestSuite">
+
+<listeners>
+<listener class-name="listenerspackage.CustomListener3"/>
+</listeners>
+
+<test name="Application Test 1">
+<classes>
+<class name="testclasses.TestNG_ListenersTest1"/>
+</classes>
+</test>
+
+<test name="Application Test 2">
+<classes>
+<class name="testclasses.TestNG_ListenersTest2"/>
+</classes>
+</test>
+</suite>
